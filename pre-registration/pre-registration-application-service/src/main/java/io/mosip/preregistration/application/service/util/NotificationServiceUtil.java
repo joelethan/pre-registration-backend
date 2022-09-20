@@ -465,7 +465,7 @@ public class NotificationServiceUtil {
 		ResponseWrapper<RegistrationCenterResponseDto> response = new ResponseWrapper<>();
 		ResponseEntity<ResponseWrapper<RegistrationCenterResponseDto>> responseEntity = null;
 //		String url = getAppointmentResourseUrl + "/appointment/" + preRegId;
-//		String url = "https://dev.mosip.net/v1/masterdata/registrationcenters/10001/eng"
+		// String url = "https://dev.techno-associates.live/v1/masterdata/registrationcenters/10001/eng"
 		String url = centerDetailUri + "/" + registrationCenterId + "/" + langCode;
 		try {
 			log.info("sessionId", "idType", "id", "In Registration method of RegistrationCenterController" + url);

@@ -35,7 +35,7 @@ public class CaptchaController {
 
 	private Logger log = LoggerConfiguration.logConfig(CaptchaController.class);
 
-	@Autowired
+	@Autowired(required = false)
 	private RequestValidator requestValidator;
 
 	@InitBinder

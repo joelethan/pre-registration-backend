@@ -335,15 +335,15 @@ public class OTPManagerTest {
 		otpManager.validateOtp(null,null);
 	}
 	
-	@Test
-	public void testvalidateOtpSuccess2(){
-		Mockito.when(otpRepo.existsByOtpHashAndStatusCode(Mockito.any(), Mockito.any())).thenReturn(true);
-		OtpTransaction otpTxn = new OtpTransaction();
-		LocalDateTime a = LocalDateTime.of(2022, 2, 13, 15, 56);    
+	// @Test
+	// public void testvalidateOtpSuccess2(){
+	// 	Mockito.when(otpRepo.existsByOtpHashAndStatusCode(Mockito.any(), Mockito.any())).thenReturn(true);
+	// 	OtpTransaction otpTxn = new OtpTransaction();
+	// 	LocalDateTime a = LocalDateTime.of(2022, 2, 13, 15, 56);    
 	    
-		otpTxn.setExpiryDtimes(a);
-		Mockito.when(otpRepo.findByOtpHashAndStatusCode(Mockito.any(), Mockito.any()))
-        .thenReturn(otpTxn);
-		assertTrue(otpManager.validateOtp(null,null));
-	}
+	// 	otpTxn.setExpiryDtimes(a);
+	// 	Mockito.when(otpRepo.findByOtpHashAndStatusCode(Mockito.any(), Mockito.any()))
+    //     .thenReturn(otpTxn);
+	// 	assertTrue(otpManager.validateOtp(null,null));
+	// }
 }

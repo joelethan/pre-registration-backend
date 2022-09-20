@@ -39,7 +39,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 @Tag(name = "application-controller", description = "Application Controller")
 public class ApplicationController {
 
-	@Autowired
+	@Autowired(required = false)
 	private RequestValidator requestValidator;
 
 	@Autowired
