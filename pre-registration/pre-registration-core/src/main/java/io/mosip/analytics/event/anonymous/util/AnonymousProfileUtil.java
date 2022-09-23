@@ -18,6 +18,8 @@ import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -84,6 +86,7 @@ public class AnonymousProfileUtil {
 	@Qualifier("plainRestTemplate")
 	@Autowired
 	private RestTemplate restTemplate;
+
 
 	/**
 	 * Autowired reference for {@link #AnonymousProfileService}
